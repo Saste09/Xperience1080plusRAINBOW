@@ -4,7 +4,7 @@
     <backgroundcolor>0</backgroundcolor>
     <onload condition="IsEmpty(Skin.String(music.name))">Skin.SetString(music.name,$LOCALIZE[14022])</onload>
     <onload condition="IsEmpty(Skin.String(rss.setting))">Skin.SetString(rss.setting,$LOCALIZE[1223])</onload>
-	<onload>Skin.SetString(BarTransparency,$LOCALIZE[41124])</onload>
+	<onload condition="IsEmpty(Skin.String(BarTransparency)">Skin.SetString(BarTransparency,$LOCALIZE[41124])</onload>
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
